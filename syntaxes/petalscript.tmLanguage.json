@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PetalScript",
+	"patterns": [
+		{
+			"name": "keyword.control.petalscript",
+			"match": "\\b(let|output|filter|search|sort|count|sum|true|false)\\b"
+		},
+		{
+			"name": "keyword.operator.petalscript",
+			"match": "\\b(from:|by:|in:|as:|equals:)\\b"
+		},
+		{
+			"name": "constant.string.quoted.double.petalscript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.petalscript",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "comment.line.number-sign.petalscript",
+			"match": "#.*$"
+		}
+	],
+	"scopeName": "source.petal"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "petal",
+  "displayName": "PetalScript Language Support",
+  "description": "PetalScript DSL powering Saqura.io",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "petalscript",
+      "aliases": ["PetalScript", "petalscript"],
+      "extensions": [".petal"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icons/petalscript-icon.png",
+        "dark": "./icons/petalscript-icon.png"
+      }
+    }],
+    "grammars": [{
+      "language": "petalscript",
+      "scopeName": "source.petal",
+      "path": "./syntaxes/petalscript.tmLanguage.json"
+    }]
+  }
+}
