@@ -6,6 +6,8 @@ This Visual Studio Code extension enables language support for the PetalScript D
 
 As of right now, this extension only supports syntax highlighting for the PetalScript language and provides a brand relevant icon package. This facilitates local development of PetalScript artifacts using a toolchain that is already set up and known.
 
+![Extension Example](media/code.png)
+
 ## Requirements
 
 This extension requires a Visual Studio Code installation with version `^1.75.0` to function properly.
